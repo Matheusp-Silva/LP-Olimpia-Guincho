@@ -6,37 +6,55 @@
     <title>Olímpia Guincho - Socorro Veicular 24h</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Header -->
     <header>
-        <div class="container">
-            <div class="logo-container">
+        <div class="container header-container">
+            <a href="#" class="logo">
                 <img src="Assets/logo.png" alt="Olímpia Guincho" class="logo-img">
-            </div>
-            <div class="slogan">Socorro Veicular 24h - Atendimento Rápido e Profissional</div>
+                <span class="logo-text">OLÍMPIA GUINCHO</span>
+            </a>
+            
+            <nav class="nav-links">
+                <a href="#services" class="nav-link">Serviços</a>
+                <a href="#gallery" class="nav-link">Atendimentos</a>
+                <a href="#about" class="nav-link">Sobre Nós</a>
+                <a href="#contact" class="nav-link">Contato</a>
+            </nav>
+            
             <a href="https://wa.me/5517997690521?text=Preciso%20de%20um%20guincho%20em%20Olímpia!" class="whatsapp-btn">
-                <i class="fab fa-whatsapp"></i> CHAMAR NO WHATSAPP
+                <i class="fab fa-whatsapp"></i> CHAMAR AGORA
             </a>
         </div>
     </header>
 
-    <!-- Seção Herói -->
+    <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h1>Resgate seu veículo com segurança!</h1>
-            <p>Serviço profissional de guincho 24 horas para carros, motos e caminhões. Atendemos panes, batidas e recolhimentos.</p>
+            <h1>Socorro Veicular Rápido e Profissional 24h</h1>
+            <p>Atendimento especializado para carros, motos e veículos pesados em Olímpia e região. Resgate seguro quando você mais precisa.</p>
+            <div class="hero-btns">
+                <a href="https://wa.me/5517997690521?text=Preciso%20de%20um%20guincho%20em%20Olímpia!" class="btn btn-primary">
+                    <i class="fab fa-whatsapp"></i> SOLICITAR GUINCHO
+                </a>
+                <a href="tel:+5517997690521" class="btn btn-secondary">
+                    <i class="fas fa-phone"></i> LIGAR AGORA
+                </a>
+            </div>
         </div>
     </section>
 
-    <!-- Carrossel de Ocorrências -->
-    <section class="gallery">
+    <!-- Gallery Section -->
+    <section class="section gallery" id="gallery">
         <div class="container">
             <h2 class="section-title">NOSSOS ATENDIMENTOS</h2>
             <div class="swiper">
                 <div class="swiper-wrapper">
-                    <!-- Substitua pelas suas fotos reais -->
                     <div class="swiper-slide">
                         <img src="Assets/resgate-carro.jpg" alt="Atendimento carro">
                     </div>
@@ -49,15 +67,6 @@
                     <div class="swiper-slide">
                         <img src="Assets/resgate-caminhonete.jpg" alt="Atendimento caminhonete">
                     </div>
-                    <div class="swiper-slide">
-                        <img src="Assets/resgate-caminhonete-3.jpg" alt="Atendimento caminhonete">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="Assets/resgate-carro-2.jpg" alt="Atendimento carro">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="Assets/resgate-carro-3.jpg" alt="Atendimento carro">
-                    </div>
                 </div>
                 <div class="swiper-pagination"></div>
                 <div class="swiper-button-prev"></div>
@@ -66,135 +75,167 @@
         </div>
     </section>
 
-    <!-- Serviços -->
-    <section class="services">
+    <!-- Services Section -->
+    <section class="section services" id="services">
         <div class="container">
             <h2 class="section-title">NOSSOS SERVIÇOS</h2>
             <div class="services-grid">
                 <div class="service-card">
+                    <img src="Assets/resgate-carro.jpg" alt="Guincho para Carros" class="service-img">
                     <div class="service-info">
                         <h3>Guincho para Carros</h3>
-                        <p>Atendimento rápido para veículos leves com plataforma ou reboque.</p>
+                        <p>Atendimento rápido para veículos leves com plataforma ou reboque, garantindo segurança e proteção ao seu veículo.</p>
                     </div>
                 </div>
                 
                 <div class="service-card">
+                    <img src="Assets/resgate-moto.jpg" alt="Resgate de Motos" class="service-img">
                     <div class="service-info">
                         <h3>Resgate de Motos</h3>
-                        <p>Transporte seguro para sua motocicleta com equipamento especializado.</p>
+                        <p>Transporte especializado para motocicletas com equipamento adequado para evitar danos à sua moto.</p>
                     </div>
                 </div>
                 
                 <div class="service-card">
+                    <img src="Assets/resgate-van.jpg" alt="Resgate de pesados" class="service-img">
                     <div class="service-info">
-                        <h3>Resgate de pesados</h3>
-                        <p>Serviço de guincho para vans e caminhonetes, sempre com segurança.</p>
-                    </div>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-info">
-                        <h3>Transporte de Veículos</h3>
-                        <p>Serviço de transporte para concessionárias, leilões ou mudanças.</p>
+                        <h3>Resgate de Pesados</h3>
+                        <p>Serviço especializado para vans, caminhonetes e veículos de grande porte com equipamentos reforçados.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Reviews -->
-    <section class="reviews">
+    <!-- Reviews Section -->
+    <section class="section reviews">
         <div class="container">
-            <h2 class="section-title">O QUE NOSSOS CLIENTES DIZEM</h2>
+            <h2 class="section-title">AVALIAÇÕES DE CLIENTES</h2>
             <div class="reviews-grid">
-                <!-- Comentário 1 -->
                 <div class="review-card">
                     <div class="review-header">
                         <span class="review-name">Regianne Brandão</span>
-                        <div class="review-stars">★★★★★</div>
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
                     </div>
-                    <p class="review-text">"A minha experiência foi com o rapaz chamado Gustavo que foi super profissional comigo 
-                        e meu marido que passamos um apuro da queles nesse último final de semana dia 07/03/2025. O carro quebrou em um lugar que não conhecíamos. Ligamos para vário guinchos e nenhum atendeu por ser as 2:40 da madrugada . Porém liguei pra essa empresa já sem esperança e esse rapaz chamado Gustavo nos atendeu prontamente e foi nós resgatar fez o possível pra chegar o mais rápido possível. Então só tenho elogios e gratidão por esse rapaz ter nós atendido tão bem . A minha experiência foi excelente."</p>
+                    <p class="review-text">"O Gustavo foi super profissional comigo e meu marido quando nosso carro quebrou em um lugar desconhecido às 2:40 da madrugada. Enquanto outros não atenderam, ele nos resgatou prontamente. Só tenho elogios e gratidão!"</p>
                     <div class="review-google">
-                        <img src="Assets/google-logo.png" alt="Google" width="20">
+                        <img src="Assets/google-logo.png" alt="Google" width="16">
                         <span>Google Reviews</span>
                     </div>
                 </div>
                 
-                <!-- Comentário 2 -->
                 <div class="review-card">
                     <div class="review-header">
                         <span class="review-name">Wagner Luz</span>
-                        <div class="review-stars">★★★★★</div>
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
                     </div>
-                    <p class="review-text">"Empresa está em outro patamar, como é bom ser atendido por pessoas educadas, profissionais e com total zelo pelo seu bem.
-                        Fui socorrido na madrugada de forma rápida e exemplar pelo Gustavo, cara excepcional, sem palavras!!!!"</p>
+                    <p class="review-text">"Empresa está em outro patamar. Fui socorrido na madrugada de forma rápida e exemplar pelo Gustavo, cara excepcional! Profissionais que têm zelo pelo seu bem."</p>
                     <div class="review-google">
-                        <img src="Assets/google-logo.png" alt="Google" width="20">
+                        <img src="Assets/google-logo.png" alt="Google" width="16">
                         <span>Google Reviews</span>
                     </div>
                 </div>
 
-                <!-- Comentário 3 -->
                 <div class="review-card">
                     <div class="review-header">
                         <span class="review-name">Alana Baraldi</span>
-                        <div class="review-stars">★★★★★</div>
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
                     </div>
-                    <p class="review-text">"Motorista Gustavo muito atencioso, educado.
-                        Nunca precisei de serviço de guincho, mais por essa primeira vez estou satisfeita 🙏🏻
-                        Muito obrigada ☺️"</p>
+                    <p class="review-text">"Motorista Gustavo muito atencioso e educado. Nunca precisei de guincho antes, mas por essa primeira vez estou completamente satisfeita. Muito obrigada!"</p>
                     <div class="review-google">
-                        <img src="Assets/google-logo.png" alt="Google" width="20">
+                        <img src="Assets/google-logo.png" alt="Google" width="16">
                         <span>Google Reviews</span>
                     </div>
                 </div>
             </div>
-            <a href="https://g.page/r/CQ-hGjflfr5yEAE/review" target="_blank" class="whatsapp-btn" style="background-color: #4285F4;">
-                <i class="fab fa-google"></i> DEIXE SUA AVALIAÇÃO
-            </a>
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="https://g.page/r/CQ-hGjflfr5yEAE/review" target="_blank" class="btn btn-secondary">
+                    <i class="fab fa-google"></i> DEIXE SUA AVALIAÇÃO
+                </a>
+            </div>
         </div>
     </section>
 
-    <!-- Sobre -->
-    <section class="about">
+    <!-- About Section -->
+    <section class="section about" id="about">
         <div class="container">
             <h2 class="section-title">SOBRE NÓS</h2>
             <div class="about-content">
                 <img src="Assets/perfil.png" alt="Gustavo Sandrin - Motorista" class="driver-img">
-                <div>
+                <div class="about-text">
                     <h3>Gustavo Sandrin</h3>
-                    <p>Ofereço um serviço de guincho rápido, seguro e profissional em Olímpia e região. Meu compromisso é resolver seu problema veicular com eficiência e transparência.</p>
-                    <p>Atendo panes mecânicas, elétricas, acidentes e serviços de transporte com equipamentos modernos e manutenção constante.</p>
+                    <p>Com anos de experiência no mercado de socorro veicular, ofereço um serviço rápido, seguro e profissional em Olímpia e região. Meu compromisso é resolver seu problema com eficiência, transparência e o máximo de cuidado com seu veículo.</p>
+                    <p>Atendemos todos os tipos de ocorrências: panes mecânicas, elétricas, acidentes e serviços de transporte. Nossa frota é moderna e passa por manutenção constante para garantir a segurança em cada atendimento.</p>
+                    <p>Quando você precisa de um guincho, precisa de confiança. É isso que oferecemos - um serviço humanizado que entende a dificuldade do momento e age com agilidade para resolver seu problema.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contato -->
-    <section class="contact">
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
         <div class="container">
             <h2 class="section-title">CONTATO</h2>
             <div class="contact-info">
-                <p><i class="fas fa-phone"></i> (17) 99769-0521</p>
-                <p><i class="fas fa-map-marker-alt"></i> Atendemos em Olímpia e região</p>
-                <p><i class="fas fa-clock"></i> 24 horas por dia, 7 dias por semana</p>
+                <div class="contact-item">
+                    <i class="fas fa-phone contact-icon"></i>
+                    <h3>Telefone</h3>
+                    <p>(17) 99769-0521</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt contact-icon"></i>
+                    <h3>Área de Atuação</h3>
+                    <p>Olímpia e Região</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock contact-icon"></i>
+                    <h3>Horário</h3>
+                    <p>24 horas / 7 dias</p>
+                </div>
             </div>
-            <a href="https://wa.me/5517997690521?text=Preciso%20de%20um%20guincho%20em%20Olímpia!" class="whatsapp-btn">
-                <i class="fab fa-whatsapp"></i> SOLICITAR GUINCHO AGORA
-            </a>
+            <div style="text-align: center;">
+                <a href="https://wa.me/5517997690521?text=Preciso%20de%20um%20guincho%20em%20Olímpia!" class="btn btn-secondary" style="background-color: var(--light); color: var(--primary);">
+                    <i class="fab fa-whatsapp"></i> SOLICITAR GUINCHO AGORA
+                </a>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>© 2025 Olímpia Guincho - Todos os direitos reservados</p>
-            <p>Socorro veicular profissional quando você mais precisa</p>
+            <div class="footer-logo">
+                <img src="Assets/logo.png" alt="Olímpia Guincho">
+            </div>
+            <p class="footer-text">Socorro veicular profissional quando você mais precisa</p>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/5517997690521?text=Preciso%20de%20um%20guincho%20em%20Olímpia!" class="social-link"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p class="copyright">© 2025 Olímpia Guincho - Todos os direitos reservados</p>
         </div>
     </footer>
 
-    <!-- WhatsApp Fixo -->
+    <!-- WhatsApp Fixed Button -->
     <a href="https://wa.me/5517997690521?text=Preciso%20de%20um%20guincho%20em%20Olímpia!" class="whatsapp-fixed">
         <i class="fab fa-whatsapp"></i>
     </a>
